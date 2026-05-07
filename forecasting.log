@@ -1,0 +1,294 @@
+2026-05-07 00:20:05 | INFO     | src.data_preprocessing | Loading data from C:\Users\Admin\Downloads\time-series-forecasting-system\data\sales_data.xlsx
+2026-05-07 00:20:06 | INFO     | src.data_preprocessing | Loaded 8084 rows, columns: ['State', 'Date', 'Total', 'Category']
+2026-05-07 00:20:06 | INFO     | src.data_preprocessing | Aggregating 43 states to weekly frequency
+2026-05-07 00:22:54 | INFO     | src.data_preprocessing | Loading data from C:\Users\Admin\Downloads\time-series-forecasting-system\data\sales_data.xlsx
+2026-05-07 00:22:54 | INFO     | src.data_preprocessing | Loaded 8084 rows, columns: ['State', 'Date', 'Total', 'Category']
+2026-05-07 00:22:54 | INFO     | src.data_preprocessing | Aggregating 43 states to weekly frequency
+2026-05-07 00:24:23 | INFO     | src.data_preprocessing | Loading data from C:\Users\Admin\Downloads\time-series-forecasting-system\data\sales_data.xlsx
+2026-05-07 00:24:23 | INFO     | src.data_preprocessing | Loaded 8084 rows, columns: ['State', 'Date', 'Total', 'Category']
+2026-05-07 00:24:23 | INFO     | src.data_preprocessing | Aggregating 43 states to weekly frequency
+2026-05-07 00:26:18 | INFO     | src.data_preprocessing | Loading data from C:\Users\Admin\Downloads\time-series-forecasting-system\data\sales_data.xlsx
+2026-05-07 00:26:18 | INFO     | src.data_preprocessing | Loaded 8084 rows, columns: ['State', 'Date', 'Total', 'Category']
+2026-05-07 00:26:18 | INFO     | src.data_preprocessing | Aggregating 43 states to weekly frequency
+2026-05-07 00:28:41 | INFO     | src.data_preprocessing | Loading data from C:\Users\Admin\Downloads\time-series-forecasting-system\data\sales_data.xlsx
+2026-05-07 00:28:42 | INFO     | src.data_preprocessing | Loaded 8084 rows, columns: ['State', 'Date', 'Total', 'Category']
+2026-05-07 00:28:42 | INFO     | src.data_preprocessing | Aggregating 43 states to weekly frequency
+2026-05-07 00:28:42 | INFO     | src.data_preprocessing | Weekly aggregation done
+2026-05-07 00:28:42 | INFO     | src.data_preprocessing | Preprocessing complete. States: 43, avg weeks per state: 256.0, min: 256, max: 256
+2026-05-07 00:28:42 | INFO     | src.train | Training 43 states
+2026-05-07 00:28:42 | INFO     | src.train | 
+============================================================
+2026-05-07 00:28:42 | INFO     | src.train | Training models for: Alabama (256 weeks of data)
+2026-05-07 00:28:42 | INFO     | src.train | ============================================================
+2026-05-07 00:28:42 | INFO     | src.models.arima_model | [Alabama] Fitting SARIMA...
+2026-05-07 00:28:50 | INFO     | src.models.arima_model | [Alabama] SARIMA fitted, AIC=5520.25
+2026-05-07 00:28:50 | INFO     | src.evaluate | SARIMA               | RMSE=166,371,733 | MAE=132,571,059 | MAPE=100.00%
+2026-05-07 00:28:54 | INFO     | src.models.arima_model | [Alabama] SARIMA saved to C:\Users\Admin\Downloads\time-series-forecasting-system\models\Alabama_sarima.pkl
+2026-05-07 00:28:54 | INFO     | src.models.prophet_model | [Alabama] Fitting Prophet...
+2026-05-07 00:29:10 | INFO     | src.models.prophet_model | [Alabama] Prophet fitted successfully
+2026-05-07 00:29:11 | INFO     | src.evaluate | Prophet              | RMSE=154,124,789 | MAE=146,761,534 | MAPE=71.68%
+2026-05-07 00:29:11 | INFO     | src.models.prophet_model | [Alabama] Prophet saved to C:\Users\Admin\Downloads\time-series-forecasting-system\models\Alabama_prophet.pkl
+2026-05-07 00:29:11 | INFO     | src.models.xgboost_model | [Alabama] Fitting XGBoost...
+2026-05-07 00:29:11 | INFO     | src.models.xgboost_model | [Alabama] XGBoost fitted on 192 samples, 15 features
+2026-05-07 00:29:12 | INFO     | src.evaluate | XGBoost              | RMSE=138,714,161 | MAE=126,812,289 | MAPE=51.76%
+2026-05-07 00:29:12 | INFO     | src.models.xgboost_model | [Alabama] XGBoost saved to C:\Users\Admin\Downloads\time-series-forecasting-system\models\Alabama_xgboost.pkl
+2026-05-07 00:29:12 | INFO     | src.models.lstm_model | [Alabama] Fitting LSTM...
+2026-05-07 00:29:22 | INFO     | src.models.lstm_model | [Alabama] LSTM trained for 10 epochs, val_loss=0.036367
+2026-05-07 00:29:24 | INFO     | src.evaluate | LSTM                 | RMSE=118,717,922 | MAE=97,478,726 | MAPE=78.22%
+2026-05-07 00:29:24 | ERROR    | src.train | [Alabama] LSTM failed: Invalid filepath extension for saving. Please add either a `.keras` extension for the native Keras format (recommended) or a `.h5` extension. Use `model.export(filepath)` if you want to export a SavedModel for use with TFLite/TFServing/etc. Received: filepath=C:\Users\Admin\Downloads\time-series-forecasting-system\models\Alabama_lstm_keras.
+2026-05-07 00:29:24 | INFO     | src.evaluate | Best model selected: XGBoost
+2026-05-07 00:29:24 | INFO     | src.train | 
+============================================================
+2026-05-07 00:29:24 | INFO     | src.train | Training models for: Arizona (256 weeks of data)
+2026-05-07 00:29:24 | INFO     | src.train | ============================================================
+2026-05-07 00:29:24 | INFO     | src.models.arima_model | [Arizona] Fitting SARIMA...
+2026-05-07 00:29:39 | INFO     | src.models.arima_model | [Arizona] SARIMA fitted, AIC=5531.69
+2026-05-07 00:29:39 | INFO     | src.evaluate | SARIMA               | RMSE=180,221,644 | MAE=143,665,065 | MAPE=100.00%
+2026-05-07 00:29:41 | INFO     | src.models.arima_model | [Arizona] SARIMA saved to C:\Users\Admin\Downloads\time-series-forecasting-system\models\Arizona_sarima.pkl
+2026-05-07 00:29:41 | INFO     | src.models.prophet_model | [Arizona] Fitting Prophet...
+2026-05-07 00:29:42 | INFO     | src.models.prophet_model | [Arizona] Prophet fitted successfully
+2026-05-07 00:29:42 | INFO     | src.evaluate | Prophet              | RMSE=169,691,940 | MAE=162,205,414 | MAPE=71.00%
+2026-05-07 00:29:42 | INFO     | src.models.prophet_model | [Arizona] Prophet saved to C:\Users\Admin\Downloads\time-series-forecasting-system\models\Arizona_prophet.pkl
+2026-05-07 00:29:42 | INFO     | src.models.xgboost_model | [Arizona] Fitting XGBoost...
+2026-05-07 00:29:42 | INFO     | src.models.xgboost_model | [Arizona] XGBoost fitted on 192 samples, 15 features
+2026-05-07 00:29:43 | INFO     | src.evaluate | XGBoost              | RMSE=144,417,505 | MAE=131,973,800 | MAPE=55.22%
+2026-05-07 00:29:43 | INFO     | src.models.xgboost_model | [Arizona] XGBoost saved to C:\Users\Admin\Downloads\time-series-forecasting-system\models\Arizona_xgboost.pkl
+2026-05-07 00:29:43 | INFO     | src.models.lstm_model | [Arizona] Fitting LSTM...
+2026-05-07 00:29:50 | INFO     | src.models.lstm_model | [Arizona] LSTM trained for 10 epochs, val_loss=0.036076
+2026-05-07 00:29:51 | INFO     | src.evaluate | LSTM                 | RMSE=132,541,201 | MAE=113,477,133 | MAPE=75.95%
+2026-05-07 00:29:51 | ERROR    | src.train | [Arizona] LSTM failed: Invalid filepath extension for saving. Please add either a `.keras` extension for the native Keras format (recommended) or a `.h5` extension. Use `model.export(filepath)` if you want to export a SavedModel for use with TFLite/TFServing/etc. Received: filepath=C:\Users\Admin\Downloads\time-series-forecasting-system\models\Arizona_lstm_keras.
+2026-05-07 00:29:51 | INFO     | src.evaluate | Best model selected: XGBoost
+2026-05-07 00:29:51 | INFO     | src.train | 
+============================================================
+2026-05-07 00:29:51 | INFO     | src.train | Training models for: Arkansas (256 weeks of data)
+2026-05-07 00:29:51 | INFO     | src.train | ============================================================
+2026-05-07 00:29:51 | INFO     | src.models.arima_model | [Arkansas] Fitting SARIMA...
+2026-05-07 00:29:58 | INFO     | src.models.arima_model | [Arkansas] SARIMA fitted, AIC=5344.76
+2026-05-07 00:29:58 | INFO     | src.evaluate | SARIMA               | RMSE=89,544,681 | MAE=71,612,041 | MAPE=100.00%
+2026-05-07 00:30:00 | INFO     | src.models.arima_model | [Arkansas] SARIMA saved to C:\Users\Admin\Downloads\time-series-forecasting-system\models\Arkansas_sarima.pkl
+2026-05-07 00:30:00 | INFO     | src.models.prophet_model | [Arkansas] Fitting Prophet...
+2026-05-07 00:30:00 | INFO     | src.models.prophet_model | [Arkansas] Prophet fitted successfully
+2026-05-07 00:30:00 | INFO     | src.evaluate | Prophet              | RMSE=83,201,363 | MAE=79,568,392 | MAPE=70.92%
+2026-05-07 00:30:00 | INFO     | src.models.prophet_model | [Arkansas] Prophet saved to C:\Users\Admin\Downloads\time-series-forecasting-system\models\Arkansas_prophet.pkl
+2026-05-07 00:30:00 | INFO     | src.models.xgboost_model | [Arkansas] Fitting XGBoost...
+2026-05-07 00:30:01 | INFO     | src.models.xgboost_model | [Arkansas] XGBoost fitted on 192 samples, 15 features
+2026-05-07 00:30:01 | INFO     | src.evaluate | XGBoost              | RMSE=75,993,198 | MAE=70,914,544 | MAPE=56.65%
+2026-05-07 00:30:02 | INFO     | src.models.xgboost_model | [Arkansas] XGBoost saved to C:\Users\Admin\Downloads\time-series-forecasting-system\models\Arkansas_xgboost.pkl
+2026-05-07 00:30:02 | INFO     | src.models.lstm_model | [Arkansas] Fitting LSTM...
+2026-05-07 00:30:07 | INFO     | src.models.lstm_model | [Arkansas] LSTM trained for 10 epochs, val_loss=0.034907
+2026-05-07 00:30:08 | INFO     | src.evaluate | LSTM                 | RMSE=62,923,265 | MAE=50,508,701 | MAPE=79.60%
+2026-05-07 00:30:08 | ERROR    | src.train | [Arkansas] LSTM failed: Invalid filepath extension for saving. Please add either a `.keras` extension for the native Keras format (recommended) or a `.h5` extension. Use `model.export(filepath)` if you want to export a SavedModel for use with TFLite/TFServing/etc. Received: filepath=C:\Users\Admin\Downloads\time-series-forecasting-system\models\Arkansas_lstm_keras.
+2026-05-07 00:30:08 | INFO     | src.evaluate | Best model selected: XGBoost
+2026-05-07 00:30:08 | INFO     | src.train | 
+============================================================
+2026-05-07 00:30:08 | INFO     | src.train | Training models for: California (256 weeks of data)
+2026-05-07 00:30:08 | INFO     | src.train | ============================================================
+2026-05-07 00:30:08 | INFO     | src.models.arima_model | [California] Fitting SARIMA...
+2026-05-07 00:30:15 | INFO     | src.models.arima_model | [California] SARIMA fitted, AIC=5910.74
+2026-05-07 00:30:15 | INFO     | src.evaluate | SARIMA               | RMSE=708,543,810 | MAE=559,992,086 | MAPE=100.00%
+2026-05-07 00:30:19 | INFO     | src.models.arima_model | [California] SARIMA saved to C:\Users\Admin\Downloads\time-series-forecasting-system\models\California_sarima.pkl
+2026-05-07 00:30:19 | INFO     | src.models.prophet_model | [California] Fitting Prophet...
+2026-05-07 00:30:20 | INFO     | src.models.prophet_model | [California] Prophet fitted successfully
+2026-05-07 00:30:20 | INFO     | src.evaluate | Prophet              | RMSE=661,292,930 | MAE=629,044,642 | MAPE=71.71%
+2026-05-07 00:30:20 | INFO     | src.models.prophet_model | [California] Prophet saved to C:\Users\Admin\Downloads\time-series-forecasting-system\models\California_prophet.pkl
+2026-05-07 00:30:20 | INFO     | src.models.xgboost_model | [California] Fitting XGBoost...
+2026-05-07 00:30:20 | INFO     | src.models.xgboost_model | [California] XGBoost fitted on 192 samples, 15 features
+2026-05-07 00:30:21 | INFO     | src.evaluate | XGBoost              | RMSE=579,574,263 | MAE=528,456,286 | MAPE=59.77%
+2026-05-07 00:30:21 | INFO     | src.models.xgboost_model | [California] XGBoost saved to C:\Users\Admin\Downloads\time-series-forecasting-system\models\California_xgboost.pkl
+2026-05-07 00:30:21 | INFO     | src.models.lstm_model | [California] Fitting LSTM...
+2026-05-07 00:30:26 | INFO     | src.models.lstm_model | [California] LSTM trained for 10 epochs, val_loss=0.033536
+2026-05-07 00:30:31 | INFO     | src.evaluate | LSTM                 | RMSE=518,056,667 | MAE=436,475,505 | MAPE=76.82%
+2026-05-07 00:30:31 | ERROR    | src.train | [California] LSTM failed: Invalid filepath extension for saving. Please add either a `.keras` extension for the native Keras format (recommended) or a `.h5` extension. Use `model.export(filepath)` if you want to export a SavedModel for use with TFLite/TFServing/etc. Received: filepath=C:\Users\Admin\Downloads\time-series-forecasting-system\models\California_lstm_keras.
+2026-05-07 00:30:31 | INFO     | src.evaluate | Best model selected: XGBoost
+2026-05-07 00:30:31 | INFO     | src.train | 
+============================================================
+2026-05-07 00:30:31 | INFO     | src.train | Training models for: Colorado (256 weeks of data)
+2026-05-07 00:30:31 | INFO     | src.train | ============================================================
+2026-05-07 00:30:31 | INFO     | src.models.arima_model | [Colorado] Fitting SARIMA...
+2026-05-07 00:30:39 | INFO     | src.models.arima_model | [Colorado] SARIMA fitted, AIC=5473.64
+2026-05-07 00:30:39 | INFO     | src.evaluate | SARIMA               | RMSE=141,945,640 | MAE=112,040,338 | MAPE=100.00%
+2026-05-07 00:31:40 | INFO     | src.models.arima_model | [Colorado] SARIMA saved to C:\Users\Admin\Downloads\time-series-forecasting-system\models\Colorado_sarima.pkl
+2026-05-07 00:31:40 | INFO     | src.models.prophet_model | [Colorado] Fitting Prophet...
+2026-05-07 00:31:40 | INFO     | src.models.prophet_model | [Colorado] Prophet fitted successfully
+2026-05-07 00:31:41 | INFO     | src.evaluate | Prophet              | RMSE=128,216,275 | MAE=120,333,077 | MAPE=73.52%
+2026-05-07 00:31:41 | INFO     | src.models.prophet_model | [Colorado] Prophet saved to C:\Users\Admin\Downloads\time-series-forecasting-system\models\Colorado_prophet.pkl
+2026-05-07 00:31:41 | INFO     | src.models.xgboost_model | [Colorado] Fitting XGBoost...
+2026-05-07 00:31:41 | INFO     | src.models.xgboost_model | [Colorado] XGBoost fitted on 192 samples, 15 features
+2026-05-07 00:31:42 | INFO     | src.evaluate | XGBoost              | RMSE=120,911,133 | MAE=114,927,074 | MAPE=45.28%
+2026-05-07 00:31:42 | INFO     | src.models.xgboost_model | [Colorado] XGBoost saved to C:\Users\Admin\Downloads\time-series-forecasting-system\models\Colorado_xgboost.pkl
+2026-05-07 00:31:42 | INFO     | src.models.lstm_model | [Colorado] Fitting LSTM...
+2026-05-07 00:31:46 | INFO     | src.models.lstm_model | [Colorado] LSTM trained for 10 epochs, val_loss=0.033686
+2026-05-07 00:31:47 | INFO     | src.evaluate | LSTM                 | RMSE=102,822,927 | MAE=83,991,468 | MAPE=78.90%
+2026-05-07 00:31:47 | ERROR    | src.train | [Colorado] LSTM failed: Invalid filepath extension for saving. Please add either a `.keras` extension for the native Keras format (recommended) or a `.h5` extension. Use `model.export(filepath)` if you want to export a SavedModel for use with TFLite/TFServing/etc. Received: filepath=C:\Users\Admin\Downloads\time-series-forecasting-system\models\Colorado_lstm_keras.
+2026-05-07 00:31:47 | INFO     | src.evaluate | Best model selected: XGBoost
+2026-05-07 00:31:47 | INFO     | src.train | 
+============================================================
+2026-05-07 00:31:47 | INFO     | src.train | Training models for: Connecticut (256 weeks of data)
+2026-05-07 00:31:47 | INFO     | src.train | ============================================================
+2026-05-07 00:31:47 | INFO     | src.models.arima_model | [Connecticut] Fitting SARIMA...
+2026-05-07 00:31:55 | INFO     | src.models.arima_model | [Connecticut] SARIMA fitted, AIC=5286.83
+2026-05-07 00:31:55 | INFO     | src.evaluate | SARIMA               | RMSE=72,014,307 | MAE=57,044,562 | MAPE=100.00%
+2026-05-07 00:32:06 | INFO     | src.models.arima_model | [Connecticut] SARIMA saved to C:\Users\Admin\Downloads\time-series-forecasting-system\models\Connecticut_sarima.pkl
+2026-05-07 00:32:06 | INFO     | src.models.prophet_model | [Connecticut] Fitting Prophet...
+2026-05-07 00:32:06 | INFO     | src.models.prophet_model | [Connecticut] Prophet fitted successfully
+2026-05-07 00:32:06 | INFO     | src.evaluate | Prophet              | RMSE=67,510,976 | MAE=64,627,800 | MAPE=69.62%
+2026-05-07 00:32:06 | INFO     | src.models.prophet_model | [Connecticut] Prophet saved to C:\Users\Admin\Downloads\time-series-forecasting-system\models\Connecticut_prophet.pkl
+2026-05-07 00:32:06 | INFO     | src.models.xgboost_model | [Connecticut] Fitting XGBoost...
+2026-05-07 00:32:06 | INFO     | src.models.xgboost_model | [Connecticut] XGBoost fitted on 192 samples, 15 features
+2026-05-07 00:32:07 | INFO     | src.evaluate | XGBoost              | RMSE=69,494,969 | MAE=65,411,950 | MAPE=67.75%
+2026-05-07 00:32:07 | INFO     | src.models.xgboost_model | [Connecticut] XGBoost saved to C:\Users\Admin\Downloads\time-series-forecasting-system\models\Connecticut_xgboost.pkl
+2026-05-07 00:32:07 | INFO     | src.models.lstm_model | [Connecticut] Fitting LSTM...
+2026-05-07 00:32:13 | INFO     | src.models.lstm_model | [Connecticut] LSTM trained for 10 epochs, val_loss=0.034561
+2026-05-07 00:32:14 | INFO     | src.evaluate | LSTM                 | RMSE=51,197,953 | MAE=41,342,942 | MAPE=79.55%
+2026-05-07 00:32:14 | ERROR    | src.train | [Connecticut] LSTM failed: Invalid filepath extension for saving. Please add either a `.keras` extension for the native Keras format (recommended) or a `.h5` extension. Use `model.export(filepath)` if you want to export a SavedModel for use with TFLite/TFServing/etc. Received: filepath=C:\Users\Admin\Downloads\time-series-forecasting-system\models\Connecticut_lstm_keras.
+2026-05-07 00:32:14 | INFO     | src.evaluate | Best model selected: XGBoost
+2026-05-07 00:32:14 | INFO     | src.train | 
+============================================================
+2026-05-07 00:32:14 | INFO     | src.train | Training models for: Florida (256 weeks of data)
+2026-05-07 00:32:14 | INFO     | src.train | ============================================================
+2026-05-07 00:32:14 | INFO     | src.models.arima_model | [Florida] Fitting SARIMA...
+2026-05-07 00:32:21 | INFO     | src.models.arima_model | [Florida] SARIMA fitted, AIC=5859.65
+2026-05-07 00:32:21 | INFO     | src.evaluate | SARIMA               | RMSE=610,138,209 | MAE=483,416,216 | MAPE=100.00%
+2026-05-07 00:32:23 | INFO     | src.models.arima_model | [Florida] SARIMA saved to C:\Users\Admin\Downloads\time-series-forecasting-system\models\Florida_sarima.pkl
+2026-05-07 00:32:23 | INFO     | src.models.prophet_model | [Florida] Fitting Prophet...
+2026-05-07 00:32:25 | INFO     | src.models.prophet_model | [Florida] Prophet fitted successfully
+2026-05-07 00:32:25 | INFO     | src.evaluate | Prophet              | RMSE=589,758,009 | MAE=564,783,252 | MAPE=70.61%
+2026-05-07 00:32:26 | INFO     | src.models.prophet_model | [Florida] Prophet saved to C:\Users\Admin\Downloads\time-series-forecasting-system\models\Florida_prophet.pkl
+2026-05-07 00:32:26 | INFO     | src.models.xgboost_model | [Florida] Fitting XGBoost...
+2026-05-07 00:32:26 | INFO     | src.models.xgboost_model | [Florida] XGBoost fitted on 192 samples, 15 features
+2026-05-07 00:32:27 | INFO     | src.evaluate | XGBoost              | RMSE=500,275,225 | MAE=453,435,807 | MAPE=62.64%
+2026-05-07 00:32:27 | INFO     | src.models.xgboost_model | [Florida] XGBoost saved to C:\Users\Admin\Downloads\time-series-forecasting-system\models\Florida_xgboost.pkl
+2026-05-07 00:32:27 | INFO     | src.models.lstm_model | [Florida] Fitting LSTM...
+2026-05-07 00:32:32 | INFO     | src.models.lstm_model | [Florida] LSTM trained for 10 epochs, val_loss=0.041825
+2026-05-07 00:32:33 | INFO     | src.evaluate | LSTM                 | RMSE=433,788,560 | MAE=334,563,119 | MAPE=81.24%
+2026-05-07 00:32:33 | ERROR    | src.train | [Florida] LSTM failed: Invalid filepath extension for saving. Please add either a `.keras` extension for the native Keras format (recommended) or a `.h5` extension. Use `model.export(filepath)` if you want to export a SavedModel for use with TFLite/TFServing/etc. Received: filepath=C:\Users\Admin\Downloads\time-series-forecasting-system\models\Florida_lstm_keras.
+2026-05-07 00:32:33 | INFO     | src.evaluate | Best model selected: XGBoost
+2026-05-07 00:32:33 | INFO     | src.train | 
+============================================================
+2026-05-07 00:32:33 | INFO     | src.train | Training models for: Georgia (256 weeks of data)
+2026-05-07 00:32:33 | INFO     | src.train | ============================================================
+2026-05-07 00:32:33 | INFO     | src.models.arima_model | [Georgia] Fitting SARIMA...
+2026-05-07 00:32:41 | INFO     | src.models.arima_model | [Georgia] SARIMA fitted, AIC=5687.27
+2026-05-07 00:32:41 | INFO     | src.evaluate | SARIMA               | RMSE=308,583,444 | MAE=246,361,993 | MAPE=100.00%
+2026-05-07 00:33:11 | ERROR    | src.train | [Georgia] SARIMA failed: [Errno 28] No space left on device
+2026-05-07 00:33:11 | INFO     | src.models.prophet_model | [Georgia] Fitting Prophet...
+2026-05-07 00:33:11 | INFO     | src.models.prophet_model | [Georgia] Prophet fitted successfully
+2026-05-07 00:33:11 | INFO     | src.evaluate | Prophet              | RMSE=290,016,421 | MAE=277,318,194 | MAPE=70.84%
+2026-05-07 00:33:11 | INFO     | src.models.prophet_model | [Georgia] Prophet saved to C:\Users\Admin\Downloads\time-series-forecasting-system\models\Georgia_prophet.pkl
+2026-05-07 00:33:11 | INFO     | src.models.xgboost_model | [Georgia] Fitting XGBoost...
+2026-05-07 00:33:11 | INFO     | src.models.xgboost_model | [Georgia] XGBoost fitted on 192 samples, 15 features
+2026-05-07 00:33:12 | INFO     | src.evaluate | XGBoost              | RMSE=233,793,334 | MAE=202,806,842 | MAPE=50.90%
+2026-05-07 00:33:12 | INFO     | src.models.xgboost_model | [Georgia] XGBoost saved to C:\Users\Admin\Downloads\time-series-forecasting-system\models\Georgia_xgboost.pkl
+2026-05-07 00:33:12 | INFO     | src.models.lstm_model | [Georgia] Fitting LSTM...
+2026-05-07 00:33:17 | INFO     | src.models.lstm_model | [Georgia] LSTM trained for 10 epochs, val_loss=0.036324
+2026-05-07 00:33:18 | INFO     | src.evaluate | LSTM                 | RMSE=220,716,802 | MAE=183,714,702 | MAPE=77.07%
+2026-05-07 00:33:18 | ERROR    | src.train | [Georgia] LSTM failed: Invalid filepath extension for saving. Please add either a `.keras` extension for the native Keras format (recommended) or a `.h5` extension. Use `model.export(filepath)` if you want to export a SavedModel for use with TFLite/TFServing/etc. Received: filepath=C:\Users\Admin\Downloads\time-series-forecasting-system\models\Georgia_lstm_keras.
+2026-05-07 00:33:18 | INFO     | src.evaluate | Best model selected: XGBoost
+2026-05-07 00:33:18 | INFO     | src.train | 
+============================================================
+2026-05-07 00:33:18 | INFO     | src.train | Training models for: Illinois (256 weeks of data)
+2026-05-07 00:33:18 | INFO     | src.train | ============================================================
+2026-05-07 00:33:18 | INFO     | src.models.arima_model | [Illinois] Fitting SARIMA...
+2026-05-07 00:33:26 | INFO     | src.models.arima_model | [Illinois] SARIMA fitted, AIC=5634.55
+2026-05-07 00:33:26 | INFO     | src.evaluate | SARIMA               | RMSE=259,877,525 | MAE=204,436,133 | MAPE=100.00%
+2026-05-07 00:33:26 | ERROR    | src.train | [Illinois] SARIMA failed: [Errno 28] No space left on device
+2026-05-07 00:33:26 | INFO     | src.models.prophet_model | [Illinois] Fitting Prophet...
+2026-05-07 00:33:27 | INFO     | src.models.prophet_model | [Illinois] Prophet fitted successfully
+2026-05-07 00:33:27 | INFO     | src.evaluate | Prophet              | RMSE=235,034,841 | MAE=220,747,243 | MAPE=73.14%
+2026-05-07 00:33:27 | INFO     | src.models.prophet_model | [Illinois] Prophet saved to C:\Users\Admin\Downloads\time-series-forecasting-system\models\Illinois_prophet.pkl
+2026-05-07 00:33:27 | INFO     | src.models.xgboost_model | [Illinois] Fitting XGBoost...
+2026-05-07 00:33:27 | INFO     | src.models.xgboost_model | [Illinois] XGBoost fitted on 192 samples, 15 features
+2026-05-07 00:33:28 | INFO     | src.evaluate | XGBoost              | RMSE=225,579,174 | MAE=208,164,332 | MAPE=65.38%
+2026-05-07 00:33:28 | INFO     | src.models.xgboost_model | [Illinois] XGBoost saved to C:\Users\Admin\Downloads\time-series-forecasting-system\models\Illinois_xgboost.pkl
+2026-05-07 00:33:28 | INFO     | src.models.lstm_model | [Illinois] Fitting LSTM...
+2026-05-07 00:33:34 | INFO     | src.models.lstm_model | [Illinois] LSTM trained for 10 epochs, val_loss=0.033942
+2026-05-07 00:33:36 | INFO     | src.evaluate | LSTM                 | RMSE=186,581,005 | MAE=152,993,126 | MAPE=77.78%
+2026-05-07 00:33:36 | ERROR    | src.train | [Illinois] LSTM failed: Invalid filepath extension for saving. Please add either a `.keras` extension for the native Keras format (recommended) or a `.h5` extension. Use `model.export(filepath)` if you want to export a SavedModel for use with TFLite/TFServing/etc. Received: filepath=C:\Users\Admin\Downloads\time-series-forecasting-system\models\Illinois_lstm_keras.
+2026-05-07 00:33:36 | INFO     | src.evaluate | Best model selected: XGBoost
+2026-05-07 00:33:36 | INFO     | src.train | 
+============================================================
+2026-05-07 00:33:36 | INFO     | src.train | Training models for: Indiana (256 weeks of data)
+2026-05-07 00:33:36 | INFO     | src.train | ============================================================
+2026-05-07 00:33:36 | INFO     | src.models.arima_model | [Indiana] Fitting SARIMA...
+2026-05-07 00:33:50 | INFO     | src.models.arima_model | [Indiana] SARIMA fitted, AIC=5535.96
+2026-05-07 00:33:50 | INFO     | src.evaluate | SARIMA               | RMSE=179,809,409 | MAE=143,274,520 | MAPE=100.00%
+2026-05-07 00:33:50 | ERROR    | src.train | [Indiana] SARIMA failed: [Errno 28] No space left on device
+2026-05-07 00:33:50 | INFO     | src.models.prophet_model | [Indiana] Fitting Prophet...
+2026-05-07 00:33:50 | ERROR    | src.train | [Indiana] Prophet failed: [Errno 28] No space left on device
+2026-05-07 00:33:50 | INFO     | src.models.xgboost_model | [Indiana] Fitting XGBoost...
+2026-05-07 00:33:50 | INFO     | src.models.xgboost_model | [Indiana] XGBoost fitted on 192 samples, 15 features
+2026-05-07 00:33:51 | INFO     | src.evaluate | XGBoost              | RMSE=159,780,480 | MAE=148,450,303 | MAPE=65.14%
+2026-05-07 00:33:51 | ERROR    | src.train | [Indiana] XGBoost failed: [Errno 28] No space left on device
+2026-05-07 00:33:51 | INFO     | src.models.lstm_model | [Indiana] Fitting LSTM...
+2026-05-07 00:34:00 | INFO     | src.models.lstm_model | [Indiana] LSTM trained for 10 epochs, val_loss=0.036343
+2026-05-07 00:34:01 | INFO     | src.evaluate | LSTM                 | RMSE=130,254,312 | MAE=109,262,403 | MAPE=77.37%
+2026-05-07 00:34:01 | ERROR    | src.train | [Indiana] LSTM failed: Invalid filepath extension for saving. Please add either a `.keras` extension for the native Keras format (recommended) or a `.h5` extension. Use `model.export(filepath)` if you want to export a SavedModel for use with TFLite/TFServing/etc. Received: filepath=C:\Users\Admin\Downloads\time-series-forecasting-system\models\Indiana_lstm_keras.
+2026-05-07 00:34:01 | INFO     | src.evaluate | Best model selected: XGBoost
+2026-05-07 00:34:01 | INFO     | src.train | 
+============================================================
+2026-05-07 00:34:01 | INFO     | src.train | Training models for: Iowa (256 weeks of data)
+2026-05-07 00:34:01 | INFO     | src.train | ============================================================
+2026-05-07 00:34:01 | INFO     | src.models.arima_model | [Iowa] Fitting SARIMA...
+2026-05-07 00:34:16 | INFO     | src.models.arima_model | [Iowa] SARIMA fitted, AIC=5355.09
+2026-05-07 00:34:16 | INFO     | src.evaluate | SARIMA               | RMSE=92,491,919 | MAE=73,131,858 | MAPE=100.00%
+2026-05-07 00:34:16 | ERROR    | src.train | [Iowa] SARIMA failed: [Errno 28] No space left on device
+2026-05-07 00:34:16 | INFO     | src.models.prophet_model | [Iowa] Fitting Prophet...
+2026-05-07 00:34:16 | ERROR    | src.train | [Iowa] Prophet failed: [Errno 28] No space left on device
+2026-05-07 00:34:16 | INFO     | src.models.xgboost_model | [Iowa] Fitting XGBoost...
+2026-05-07 00:34:17 | INFO     | src.models.xgboost_model | [Iowa] XGBoost fitted on 192 samples, 15 features
+2026-05-07 00:34:18 | INFO     | src.evaluate | XGBoost              | RMSE=81,341,948 | MAE=76,947,021 | MAPE=55.42%
+2026-05-07 00:34:18 | ERROR    | src.train | [Iowa] XGBoost failed: [Errno 28] No space left on device
+2026-05-07 00:34:18 | INFO     | src.models.lstm_model | [Iowa] Fitting LSTM...
+2026-05-07 00:34:26 | INFO     | src.models.lstm_model | [Iowa] LSTM trained for 10 epochs, val_loss=0.036232
+2026-05-07 00:34:28 | INFO     | src.evaluate | LSTM                 | RMSE=66,549,020 | MAE=54,870,480 | MAPE=78.21%
+2026-05-07 00:34:28 | ERROR    | src.train | [Iowa] LSTM failed: Invalid filepath extension for saving. Please add either a `.keras` extension for the native Keras format (recommended) or a `.h5` extension. Use `model.export(filepath)` if you want to export a SavedModel for use with TFLite/TFServing/etc. Received: filepath=C:\Users\Admin\Downloads\time-series-forecasting-system\models\Iowa_lstm_keras.
+2026-05-07 00:34:28 | INFO     | src.evaluate | Best model selected: XGBoost
+2026-05-07 00:34:28 | INFO     | src.train | 
+============================================================
+2026-05-07 00:34:28 | INFO     | src.train | Training models for: Kansas (256 weeks of data)
+2026-05-07 00:34:28 | INFO     | src.train | ============================================================
+2026-05-07 00:34:28 | INFO     | src.models.arima_model | [Kansas] Fitting SARIMA...
+2026-05-07 00:34:39 | INFO     | src.models.arima_model | [Kansas] SARIMA fitted, AIC=5286.37
+2026-05-07 00:34:39 | INFO     | src.evaluate | SARIMA               | RMSE=73,188,679 | MAE=58,710,522 | MAPE=100.00%
+2026-05-07 00:34:39 | ERROR    | src.train | [Kansas] SARIMA failed: [Errno 28] No space left on device
+2026-05-07 00:34:39 | INFO     | src.models.prophet_model | [Kansas] Fitting Prophet...
+2026-05-07 00:34:39 | ERROR    | src.train | [Kansas] Prophet failed: [Errno 28] No space left on device
+2026-05-07 00:34:39 | INFO     | src.models.xgboost_model | [Kansas] Fitting XGBoost...
+2026-05-07 00:34:39 | INFO     | src.models.xgboost_model | [Kansas] XGBoost fitted on 192 samples, 15 features
+2026-05-07 00:34:40 | INFO     | src.evaluate | XGBoost              | RMSE=62,791,477 | MAE=58,872,255 | MAPE=51.68%
+2026-05-07 00:34:40 | ERROR    | src.train | [Kansas] XGBoost failed: [Errno 28] No space left on device
+2026-05-07 00:34:40 | INFO     | src.models.lstm_model | [Kansas] Fitting LSTM...
+2026-05-07 00:34:45 | INFO     | src.models.lstm_model | [Kansas] LSTM trained for 10 epochs, val_loss=0.036546
+2026-05-07 00:34:47 | INFO     | src.evaluate | LSTM                 | RMSE=51,273,476 | MAE=41,302,517 | MAPE=79.29%
+2026-05-07 00:34:47 | ERROR    | src.train | [Kansas] LSTM failed: Invalid filepath extension for saving. Please add either a `.keras` extension for the native Keras format (recommended) or a `.h5` extension. Use `model.export(filepath)` if you want to export a SavedModel for use with TFLite/TFServing/etc. Received: filepath=C:\Users\Admin\Downloads\time-series-forecasting-system\models\Kansas_lstm_keras.
+2026-05-07 00:34:47 | INFO     | src.evaluate | Best model selected: XGBoost
+2026-05-07 00:34:47 | INFO     | src.train | 
+============================================================
+2026-05-07 00:34:47 | INFO     | src.train | Training models for: Kentucky (256 weeks of data)
+2026-05-07 00:34:47 | INFO     | src.train | ============================================================
+2026-05-07 00:34:47 | INFO     | src.models.arima_model | [Kentucky] Fitting SARIMA...
+2026-05-07 00:34:55 | INFO     | src.models.arima_model | [Kentucky] SARIMA fitted, AIC=5468.91
+2026-05-07 00:34:55 | INFO     | src.evaluate | SARIMA               | RMSE=139,992,808 | MAE=111,980,954 | MAPE=100.00%
+2026-05-07 00:34:55 | ERROR    | src.train | [Kentucky] SARIMA failed: [Errno 28] No space left on device
+2026-05-07 00:34:55 | INFO     | src.models.prophet_model | [Kentucky] Fitting Prophet...
+2026-05-07 00:34:56 | ERROR    | src.train | [Kentucky] Prophet failed: [Errno 28] No space left on device
+2026-05-07 00:34:57 | INFO     | src.models.lstm_model | [Kentucky] Fitting LSTM...
+2026-05-07 00:34:57 | ERROR    | src.train | [Kentucky] XGBoost failed: [Errno 28] No space left on device
+2026-05-07 00:35:05 | ERROR    | src.train | [Kentucky] LSTM failed: Invalid filepath extension for saving. Please add either a `.keras` extension for the native Keras format (recommended) or a `.h5` extension. Use `model.export(filepath)` if you want to export a SavedModel for use with TFLite/TFServing/etc. Received: filepath=C:\Users\Admin\Downloads\time-series-forecasting-system\models\Kentucky_lstm_keras.
+2026-05-07 00:35:03 | INFO     | src.models.lstm_model | [Kentucky] LSTM trained for 10 epochs, val_loss=0.036114
+2026-05-07 00:34:56 | INFO     | src.models.xgboost_model | [Kentucky] Fitting XGBoost...
+2026-05-07 00:34:56 | INFO     | src.models.xgboost_model | [Kentucky] XGBoost fitted on 192 samples, 15 features
+2026-05-07 00:34:57 | INFO     | src.evaluate | XGBoost              | RMSE=112,633,142 | MAE=105,011,890 | MAPE=52.82%
+2026-05-07 00:35:05 | INFO     | src.evaluate | LSTM                 | RMSE=98,284,130 | MAE=78,760,915 | MAPE=79.57%
+2026-05-07 00:35:05 | INFO     | src.evaluate | Best model selected: XGBoost
+2026-05-07 00:37:51 | INFO     | src.data_preprocessing | Loading data from C:\Users\Admin\Downloads\time-series-forecasting-system\data\sales_data.xlsx
+2026-05-07 00:37:52 | INFO     | src.data_preprocessing | Loaded 8084 rows, columns: ['State', 'Date', 'Total', 'Category']
+2026-05-07 00:37:52 | INFO     | src.data_preprocessing | Aggregating 43 states to weekly frequency
+2026-05-07 00:37:53 | INFO     | src.data_preprocessing | Weekly aggregation done
+2026-05-07 00:37:53 | INFO     | src.data_preprocessing | Preprocessing complete. States: 43, avg weeks per state: 256.0, min: 256, max: 256
+2026-05-07 00:37:54 | INFO     | src.evaluate | SARIMA               | RMSE=708,543,810 | MAE=559,992,086 | MAPE=100.00%
+2026-05-07 00:37:55 | INFO     | src.evaluate | Prophet              | RMSE=661,292,930 | MAE=629,044,642 | MAPE=71.71%
+2026-05-07 00:37:56 | INFO     | src.evaluate | XGBoost              | RMSE=579,574,263 | MAE=528,456,286 | MAPE=59.77%
+2026-05-07 00:37:57 | INFO     | src.visualize | Saved: C:\Users\Admin\Downloads\time-series-forecasting-system\outputs\California_forecast_vs_actual.png
+2026-05-07 00:37:58 | INFO     | src.visualize | Saved: C:\Users\Admin\Downloads\time-series-forecasting-system\outputs\California_model_comparison.png
+2026-05-07 00:37:59 | INFO     | src.visualize | Saved: C:\Users\Admin\Downloads\time-series-forecasting-system\outputs\California_feature_importance.png
